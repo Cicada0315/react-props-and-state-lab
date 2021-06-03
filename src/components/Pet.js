@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Pet extends React.Component {
-  handonClick=()=>{
+  handleClick=()=>{
     this.props.onAdoptPet(this.props.pet.id)
   }
   render() {
@@ -26,7 +26,7 @@ class Pet extends React.Component {
         <div className="extra content">
         {this.props.pet.isAdopted ? 
         ( <button className="ui disabled button">Already adopted</button> ) :
-        ( <button className="ui primary button" onClick={this.handonClick}>Adopt pet</button> 
+        ( <button className="ui primary button" onClick={this.handleClick}>Adopt pet</button> 
         ) }
         </div>
       </div>
